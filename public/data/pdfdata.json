@@ -1,0 +1,10 @@
+{
+    "message": "PDF Data",
+    "status": true,
+    "id": "1",
+    "data": {       
+        "customer_details": {"cid": 1234567},
+        "customer_shipper": {"name": "Nagesh Medisetty", "origin": "456 Skillman Street Dallas, TX 75007", "origin_phone": "(469) 461-5000", "email": "ams@allmysons.com"},
+        "consignee": {"name": "Rajesh Alluri", "destination_address": "456 Main Street Dallas, TX 75007", "destination_phone": "+919177012346"}
+    }
+}
