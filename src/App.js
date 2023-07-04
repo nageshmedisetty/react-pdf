@@ -1,6 +1,6 @@
 import React from 'react'
 import PDFDocument from './PDFDocument'
-import "./assets/css/style.css"
+import "./assets/css/style.scss"
 
 const App = () => {
   return (

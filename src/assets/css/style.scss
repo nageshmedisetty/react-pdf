@@ -1,0 +1,29 @@
+@import "./pagethree.css";
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+
+// .titleHead{
+//     font-family:'Roboto'
+// }
+.titleHead{
+  font-size: '80px;';
+  color: #ff0000 !important ;
+}
+// .service-dates{
+//   .titleHead{
+//     font-size: '80px;';
+//     color: #ff0000 !important ;
+//   }
+// }

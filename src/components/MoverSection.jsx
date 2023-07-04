@@ -3,6 +3,7 @@ import React from 'react'
 import { Text, View, Image, StyleSheet } from '@react-pdf/renderer';
 import Logo from '../assets/AMSLogo.jpg'
 import Header from './Header'
+import '@fontsource/roboto';
 
 const MoverSection = (props) => {
     console.log("response--->",props.data)
@@ -19,18 +20,18 @@ const MoverSection = (props) => {
                     <Image src={Logo} style={{ width: 240 }} />
                 </View>
                 <View style={styles.viewtabnext}>
-                    <Text style={{ color: "#757575", fontWeight: 500, paddingBottom: "12px", fontSize:12 }}>Mover (Carrier)</Text>
-                    <Text style={{ fontWeight: 500, fontSize: 12, paddingBottom: "4px", }}>All My Sons Moving & Storage of Dallas, LLC</Text>
-                    <Text style={{ fontWeight: 400, fontSize: 12, paddingBottom: "4px", }}>2400 Old Mill Rd., Carrollton, TX 75007</Text>
-                    <Text style={{ fontWeight: 400, fontSize: 12 }}>972-367-1095</Text>
-                    <View style={{ marginTop: "5px", display: 'flex' }} >
-                        <View style={{ display: 'flex', flexDirection: 'row', paddingBottom: "4px" }}>
-                            <Text style={{ fontWeight: 500, fontSize:12 }}>Intrastate #:</Text>
-                            <Text style={{ marginLeft: 12,fontWeight: 400, fontSize:12 }}>TxDMV No. 000531426B</Text>
+                    <Text style={styles.txtMover}>Mover (Carrier)</Text>
+                    <Text style={styles.mxas}>All My Sons Moving & Storage of Dallas, LLC</Text>
+                    <Text style={styles.mxas}>2400 Old Mill Rd., Carrollton, TX 75007</Text>
+                    <Text style={styles.mxas}>972-367-1095</Text>
+                    <View style={styles.viewint} >
+                        <View style={styles.viewintf}>
+                            <Text style={styles.intrastate}>Intrastate #:</Text>
+                            <Text style={styles.intrastate}>TxDMV No. 000531426B</Text>
                         </View>
-                        <View style={{ display: 'flex', flexDirection: 'row' }}>
-                            <Text style={{ fontWeight: 500, fontSize:12,paddingBottom: "4px" }}>AMS Truck #:</Text>
-                            <Text style={{ marginLeft: 12,fontWeight: 400, fontSize:12, paddingBottom: "4px"}}>DAL 126</Text>
+                        <View style={styles.viewints}>
+                            <Text style={styles.intrastate}>AMS Truck #:</Text>
+                            <Text style={styles.intrastate}>DAL 126</Text>
                         </View>
                     </View>
                 </View>
@@ -66,6 +67,40 @@ const styles = StyleSheet.create({
         justifyContent: "left", 
         alignItems: 'left', 
         textAlign: 'left'
-    }
+    },
+    viewint:{
+        marginTop: "5px", display: 'flex'
+    },
+    viewintf:{
+        display: 'flex', flexDirection: 'row', paddingBottom: "4px"
+    },
+    viewints:{
+        display: 'flex', flexDirection: 'row'
+    },
+    txtMover:{
+        color: "rgba(0, 0, 0, 0.54)",
+        fontSize: 12,
+        // fontFamily: "Roboto, sans-serif",
+        fontStyle: "normal",
+        fontWeight: 500,
+        lineHeight: 1.6,
+        letterSpacing: 0.4,
+    },
+    mxas:{
+        color: "rgba(0, 0, 0, 0.87)",
+        fontSize: 12,
+        fontStyle: 'normal',
+        fontWeight: 500,
+        lineHeight: 1.6,
+        letterSpacing: 0.4
+    },
     
+    intrastate:{
+        color: "rgba(0, 0, 0, 0.87)",
+        fontSize: 12,
+        fontStyle: 'normal',
+        fontWeight: 500,
+        lineHeight: 1,
+        letterSpacing: 0.4
+    }
 });

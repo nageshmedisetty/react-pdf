@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
         display: 'flex', flexDirection: 'row', justifyContent: "space-between", marginTop: 10
     },
     viewhd:{ 
-        display: 'flex', flexDirection: 'row', justifyContent: "space-between", 
+        display: 'flex', flexDirection: 'row', justifyContent: "space-between"
     },
     viewrow:{
         width: '50%', paddingLeft: 12, paddingRight: 12 
